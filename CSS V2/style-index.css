@@ -1,0 +1,365 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --main-color:white;
+  --main-bg-color:#353535;
+}
+
+.fa-heart {
+  margin-right: 10px;
+}
+
+.liked {
+  height: 32px;
+  width: 30px;
+  position: relative;
+}
+
+i.fa-regular.fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+i.fa-solid.fa-heart {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.liked:hover i.fa-solid.fa-heart {
+  display: block;
+  color: #9356dc;
+}
+.liked:hover i.fa-regular.fa-heart {
+  opacity: 0;
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 425px;
+  box-sizing: border-box;
+}
+
+.logo-ohmyfood {
+  color: var(--main-color);
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+}
+
+.Explorer-nos-restau {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+h2.section-title {
+  font-size: xx-large;
+}
+
+p.section-title {
+  font-size: 18px;
+}
+
+.para-Explorer, .section-title {
+  display: inherit;
+}
+
+.fa-mobile-screen-button, .fa-list-ul {
+  color: #7e7e7e;
+}
+
+.fa-store {
+  color: #9356dc;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  height: 15.688em;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.cards img {
+  object-fit: cover;
+}
+
+.cards-restau-palette, header {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-header {
+  z-index: 1;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.locations {
+  color: #353535;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.locations-txt {
+  padding-left: 5px;
+}
+
+/**fin header**/
+/**explo restau**/
+.Explorer-nos-restau {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  background-color: #f6f6f6;
+  align-items: center;
+  text-align: center;
+}
+
+.button-explorer {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  height: 20px;
+  border-radius: 25px;
+  padding: 15px 20px 15px 20px;
+  background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.button-explorer:hover {
+  background: linear-gradient(200.64deg, #9356DC -65px, #FF79DA 65%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+/**fin explo restau**/
+/**début fonctionnement**/
+.Fonctionnement {
+  margin-bottom: 100px;
+}
+
+a.nmb-btn {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  color: white;
+  background: #9356dc;
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  padding: 15px;
+  border: solid 1px #9356dc;
+  justify-content: center;
+  align-items: center;
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.fa-mobile-screen-button, .fa-list-ul, .fa-store {
+  padding-right: 5%;
+  padding-left: 2%;
+}
+
+.button-Choose, .button-Composed, .button-Enjoy {
+  color: black;
+  font-weight: 500;
+  border: solid 2px #f6f6f6;
+  width: 90%;
+  border-radius: 20px;
+  padding: 8% 5% 8% 5%;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/**fin fonctionnement**/
+/**début partie restaurant**/
+.restaurants-cards {
+  padding-bottom: 40px;
+}
+
+.cards img {
+  object-fit: cover;
+  height: 10.75em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 100%;
+}
+
+.New {
+  font-weight: 500;
+  background: #99e2d0;
+  color: #008766;
+  padding: 2%;
+  border: 1px solid #99e2d0;
+  border-radius: 5%;
+  width: fit-content;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cards-contents {
+  padding-left: 6%;
+}
+
+.cards-subtitle {
+  margin-top: -25px;
+}
+
+h3.cards-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  color: white;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+footer .logo-ohmyfood {
+  filter: brightness(0) invert(1);
+  width: 40%;
+  height: 40%;
+}
+footer .fa-solid {
+  padding-right: 2%;
+}
+
+/***Média Queries**/
+@media screen and (min-width: 1024px) {
+  .main-container {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .logo-ohmyfood {
+    color: var(--main-color);
+    width: 25%;
+  }
+  .locations {
+    color: #353535;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card-fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .button-Choose, .button-Composed, .button-Enjoy {
+    margin-right: 16px;
+    width: 322.49px;
+  }
+  .number {
+    padding: 15px;
+    top: 595px;
+    left: 175px;
+  }
+  .Restaurants {
+    background-color: #f6f6f6;
+    width: 100%;
+  }
+  .Restaurants h2 {
+    margin-right: 955px;
+    display: flex;
+    padding-left: 2%;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurants-cards {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+  }
+  .cards {
+    margin-right: 130px;
+    width: 100%;
+  }
+  .cards-restau-palette {
+    width: 490px;
+    margin-right: 110px;
+    grid-column: 1/1;
+    grid-row: 1;
+  }
+  .cards-la-note {
+    width: 490px;
+    grid-column: 2/2;
+    grid-row: 1;
+  }
+  .cards-a-la-fr {
+    margin-right: 110px;
+    grid-row: 2;
+    grid-column: 1/1;
+  }
+  footer .logo-ohmyfood {
+    filter: brightness(0) invert(1);
+    margin-left: 2%;
+    width: 15%;
+    height: 15%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  article.footer-txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer p {
+    margin-right: 40px;
+  }
+  footer .fa-solid {
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map */
