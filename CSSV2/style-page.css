@@ -313,8 +313,7 @@ footer .fa-solid {
     text-align: center;
   }
   .Menu {
-    position: relative;
-    top: -70px;
+    margin-top: -70px;
     z-index: 0;
     display: flex;
     width: 70%;
