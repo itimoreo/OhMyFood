@@ -28,7 +28,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 200ms 0s forwards;
+  animation: disappear 200ms forwards;
   animation-delay: 3s;
 }
 
@@ -58,46 +58,45 @@ p {
     transform: scale(0);
   }
 }
-.Entrée{
+.Entrée {
   animation: E-appear 1s ease;
   animation-delay: 3s;
 }
-.Plats{
+
+.Plats {
   animation: P-appear 1s ease;
   animation-delay: 3s;
 }
-.Désserts{
+
+.Désserts {
   animation: D-appear 1s ease;
   animation-delay: 3s;
 }
-@keyframes E-appear{
-  0%{
-      opacity: 0;
+
+@keyframes E-appear {
+  0% {
+    opacity: 0;
   }
-  100%{
-      opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
-@keyframes P-appear{
-  0%{
-      opacity: 0;
+@keyframes P-appear {
+  0% {
+    opacity: 0;
   }
-  100%{
-      opacity: 1;
-  }
-}
-@keyframes D-appear{
-  0%{
-      opacity: 0;
-  }
-  100%{
-      opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
-
-
-
-
+@keyframes D-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main-container-p2 {
   align-items: center;
   display: flex;
@@ -106,7 +105,7 @@ p {
 }
 
 button {
-  margin-left: -30px;
+  margin-right: 60px;
   font-size: larger;
   border: none;
   background: none;
@@ -118,6 +117,7 @@ button {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .logo_OMF {
   display: flex;
   flex-direction: row;
@@ -201,7 +201,9 @@ i.fa-solid.fa-heart {
   display: none;
 }
 
-.Entrée, .Plats, .Désserts {
+.Entrée,
+.Plat,
+.Dessert {
   display: flex;
   flex-direction: column;
 }
