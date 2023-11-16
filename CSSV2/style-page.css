@@ -28,7 +28,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 200ms forwards;
+  animation: disappear 200ms 0s forwards;
   animation-delay: 3s;
 }
 
@@ -58,6 +58,46 @@ p {
     transform: scale(0);
   }
 }
+.Entrée{
+  animation: E-appear 1s ease;
+  animation-delay: 3s;
+}
+.Plats{
+  animation: P-appear 1s ease;
+  animation-delay: 3s;
+}
+.Désserts{
+  animation: D-appear 1s ease;
+  animation-delay: 3s;
+}
+@keyframes E-appear{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+@keyframes P-appear{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+@keyframes D-appear{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+
+
 .main-container-p2 {
   align-items: center;
   display: flex;
@@ -66,7 +106,7 @@ p {
 }
 
 button {
-  margin-right: 60px;
+  margin-left: -30px;
   font-size: larger;
   border: none;
   background: none;
@@ -77,6 +117,11 @@ button {
   justify-content: flex-start;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.logo_OMF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .logo-ohmyfood {
@@ -100,8 +145,8 @@ body img {
 }
 
 .img-Menu {
-  width: 375px;
-  height: 275px;
+  width: 520px;
+  height: 350px;
   object-fit: cover;
   max-width: 100%;
 }
@@ -118,7 +163,6 @@ h2 {
 .Menu {
   margin-top: -70px;
   z-index: 0;
-  max-width: 100%;
   width: 100%;
   border: solid 2px #f6f6f6;
   border-top-right-radius: 50px;
@@ -157,9 +201,7 @@ i.fa-solid.fa-heart {
   display: none;
 }
 
-.Entrée,
-.Plat,
-.Dessert {
+.Entrée, .Plats, .Désserts {
   display: flex;
   flex-direction: column;
 }
