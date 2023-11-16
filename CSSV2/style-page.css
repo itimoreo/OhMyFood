@@ -24,7 +24,7 @@ p {
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 100%;
+  height: 1845px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,8 @@ p {
 
 .loader::after {
   content: "";
+  position: absolute;
+  top: 350px;
   width: 75px;
   height: 75px;
   border: 15px solid white;
@@ -105,7 +107,8 @@ p {
 }
 
 button {
-  margin-right: 60px;
+  position: absolute;
+  left: 5px;
   font-size: larger;
   border: none;
   background: none;
@@ -145,7 +148,7 @@ body img {
 }
 
 .img-Menu {
-  width: 520px;
+  width: 100%;
   height: 350px;
   object-fit: cover;
   max-width: 100%;
