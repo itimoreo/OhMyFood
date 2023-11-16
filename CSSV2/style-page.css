@@ -16,6 +16,48 @@ p {
   font-weight: 300;
 }
 
+.loader {
+  background: #eaeaea;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 200ms forwards;
+  animation-delay: 3s;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid white;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .main-container-p2 {
   align-items: center;
   display: flex;
@@ -24,10 +66,10 @@ p {
 }
 
 button {
+  margin-right: 60px;
   font-size: larger;
   border: none;
   background: none;
-  cursor: pointer;
 }
 
 .logo-header {
@@ -36,15 +78,12 @@ button {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.logo_OMF{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 .logo-ohmyfood {
   color: var(--main-color);
   width: 50%;
 }
+
 header {
   display: flex;
 }
@@ -61,8 +100,8 @@ body img {
 }
 
 .img-Menu {
-  width: 100%;
-  height: 245px;
+  width: 375px;
+  height: 275px;
   object-fit: cover;
   max-width: 100%;
 }
@@ -71,14 +110,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   font-size: 30px;
-  font-weight: 300;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .Menu {
-  margin-top: -45px;
+  margin-top: -70px;
   z-index: 0;
   max-width: 100%;
   width: 100%;
@@ -231,17 +269,14 @@ i.fa-solid.fa-circle-check {
   text-align: center;
   color: white;
   font-weight: 500;
-  width: 200px;
+  border: solid 2px;
+  border-color: linear-gradient(to top, #9356dc, #ff79da);
+  width: 150px;
   border-radius: 25px;
   padding: 15px 20px 15px 20px;
   background: linear-gradient(to top, #9356dc, #ff79da);
   margin-bottom: 25%;
   margin-top: 25%;
-    &&:hover{
-      background: linear-gradient(339deg, #9356DC -200px, #FF79DA 65%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  
-  }
 }
 
 .footer {
@@ -259,7 +294,7 @@ footer .logo-ohmyfood {
 }
 
 footer .fa-solid {
-  padding-right: 10px;
+  padding-right: 2%;
 }
 
 /*****Média Queries****/
@@ -281,26 +316,8 @@ footer .fa-solid {
     max-width: 1920px;
     width: 100%;
   }
-  .logo-header button {
-    margin-right: 0px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-  }
-  .logo_OMF{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  .logo-header{
-    width: 100%;
-    
-  }
-  .logo-ohmyfood{
-    width: 20%;
+  button {
+    margin-right: 550px;
   }
   .img-Menu {
     width: inherit;
@@ -312,7 +329,8 @@ footer .fa-solid {
     text-align: center;
   }
   .Menu {
-    margin-top: -70px;
+    position: relative;
+    top: -70px;
     z-index: 0;
     display: flex;
     width: 70%;
@@ -340,9 +358,6 @@ footer .fa-solid {
     margin-left: 2%;
     width: 15%;
     height: 15%;
-  }
-  footer p{
-    margin-right: 50px;
   }
   .card-choice:hover .title-description p {
     width: 300px;
