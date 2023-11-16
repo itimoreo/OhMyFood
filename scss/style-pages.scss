@@ -112,7 +112,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+}
 
 .logo-ohmyfood {
     color: var(--main-color);
@@ -340,6 +340,16 @@ footer .fa-solid {
     body img {
         width: 100%;
     }
+    .logo-header {
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .logo_OMF {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
     .main-container-p2 {
         display: flex;
@@ -347,12 +357,14 @@ footer .fa-solid {
     }
 
     header {
-        max-width: 1920px;
+        display: flex;
         width: 100%;
+        justify-content: center;
     }
 
     button {
-        margin-right: 550px;
+       position: absolute;
+       left: 5px;
     }
 
     .img-Menu {
