@@ -53,15 +53,15 @@ p {
     }
 }
 .Entrée{
-    animation: E-appear 1s ease;
+    animation: E-appear 2s ease;
     animation-delay: 3s;
   }
   .Plats{
-    animation: P-appear 1s ease;
+    animation: P-appear 3s ease;
     animation-delay: 3s;
   }
   .Désserts{
-    animation: D-appear 1s ease;
+    animation: D-appear 4s ease;
     animation-delay: 3s;
   }
   @keyframes E-appear{
